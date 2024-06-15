@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "titulo": "Pesa Rusa",
+        "descripcion": "16 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://sacrificesports.cl/wp-content/uploads/2022/02/kettlebell-16-kg-sello-600x600.png",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "titulo": "Pesa Rusa",
+        "descripcion": "8 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://www.hola.com/imagenes/seleccion/20211011197172/mejores-pesas-rusas-kettlebells/1-104-710/kettlebell-pesa-8-z.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "titulo": "Pesa Rusa",
+        "descripcion": "40 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://images-na.ssl-images-amazon.com/images/I/71KwPKU6glL._AC_UL600_SR600,600_.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "titulo": "Pesa Rusa",
+        "descripcion": "18 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL67nbCHHsIwOzha6vljv5ezNI91kUDZi36w&s",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 5,
+        "titulo": "Mancuerna",
+        "descripcion": "3 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://www.fitnesspointstore.com/wp-content/uploads/2021/04/mancuerna-vinilo-powertech-3kg.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 6,
+        "titulo": "Mancuerna",
+        "descripcion": "10 KG",
+        "categoria": "accesorios",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBAd-UYc1AMiQp4KGT3qz4QLMCuvQRgZhrA&s",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 7,
+        "titulo": "Mancuerna",
+        "descripcion": "20 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://d22fxaf9t8d39k.cloudfront.net/05a996b274af45ec8e2c393f810f36aa80fde7b071e3b4faa1bb7a94e31278a4172505.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 8,
+        "titulo": "Disco",
+        "descripcion": "7,5 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://turbysport.com.ar/wp-content/uploads/2023/05/image_cf63a8fb-c0af-4557-ab8c-a1f63c9354b5-600x600.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 9,
+        "titulo": "Disco",
+        "descripcion": "25 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://www.tupropiogym.com/wp-content/uploads/2019/06/raw25-1.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 10,
+        "titulo": "Barra Olimpica",
+        "descripcion": "20 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://abgfitchile.cl/wp-content/uploads/2022/06/barra-2-700x700-1-600x600.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 11,
+        "titulo": "Barra Recta Olimpica",
+        "descripcion": "1.20mts, 8 KG.",
+        "categoria": "accesorios",
+        "imagen": "https://www.cronoslife.com/wp-content/uploads/2021/09/barra-olimpica-2.20-mts-20-kg-forte-600x600.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 12,
+        "titulo": "Remera Azul",
+        "descripcion": "Deportiva de Hombre.",
+        "categoria": "indumentaria",
+        "imagen": "https://mc3.com.ar/Files/somefiles/430_Dise%C3%B1o%20sin%20t%C3%ADtulo%20-%202024-01-31T191159.107.png",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 13,
+        "titulo": "Remera beige",
+        "descripcion": "Deportiva de Mujer.",
+        "categoria": "indumentaria",
+        "imagen": "https://www.vandalia.com.ar/media/catalog/product/cache/1/small_image/600x600/9df78eab33525d08d6e5fb8d27136e95/9/7/9706_remera_training_spark.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 14,
+        "titulo": "Pantalon Short",
+        "descripcion": "Deportivo de hombre.",
+        "categoria": "indumentaria",
+        "imagen": "https://d22fxaf9t8d39k.cloudfront.net/c3f0404d63f1bb0691a650a76c97f2f3c1b7fd03bdca5eb64766f695e85eb5c732864.jpeg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 15,
+        "titulo": "Buzo de entramiento",
+        "descripcion": "Color negro letras amarillas.",
+        "categoria": "indumentaria",
+        "imagen": "https://d22fxaf9t8d39k.cloudfront.net/ac993198b4f052ebc9bf76a9ae83a2627bbf6b6f32abf4b7ddc9e9a845c341d982601.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 16,
+        "titulo": "Buzo canguro de entramiento",
+        "descripcion": "Buzo canguro de crossfit.",
+        "categoria": "indumentaria",
+        "imagen": "https://d22fxaf9t8d39k.cloudfront.net/bcc2f19fa9e1330e6bba19d06601ee809832a58fa6f61414a1f95724edf28b8382601.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 17,
+        "titulo": "Collhem",
+        "descripcion": "Proteina a base de colageno de chocolate x 2kg.",
+        "categoria": "suplementos",
+        "imagen": "https://www.suplementosr14.cl/wp-content/uploads/2021/01/CollaHemp-600x600-1.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 18,
+        "titulo": "GHuey proteim",
+        "descripcion": "Proteina concentrada de vainilla x 25g",
+        "categoria": "suplementos",
+        "imagen": "https://d22fxaf9t8d39k.cloudfront.net/d1e7105a391110b813fde112d2ac3f25ac27c6560bbcfa6f05d47a42256488f7107127.png",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 19,
+        "titulo": "Creatina",
+        "descripcion": "Suplemento de carbohidrato x 1kg.",
+        "categoria": "suplementos",
+        "imagen": "https://tiendasn.com.ar/193/suplemento-de-carbohidratos-proteinas-beta-alanina-y-creatina.jpg",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": 20,
+        "titulo": "Proteina",
+        "descripcion": "Batido de proteina sabor chocolate x 500g.",
+        "categoria": "suplementos",
+        "imagen": "https://cdn.batitienda.com/baticloud/images/product_image_from_excel_4b5423f89ed942c9a25a387ad31b0ffb_637438132345891008_0_m.jpg",
+        "precio": 1500,
+        "stock": 10
+    }
+]
