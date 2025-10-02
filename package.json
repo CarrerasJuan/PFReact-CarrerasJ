@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://CarrerasJuan.github.io/PFReact-CarrerasJ",
+  "homepage": "https://carrerasjuan.github.io/PFReact-CarrerasJ",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
