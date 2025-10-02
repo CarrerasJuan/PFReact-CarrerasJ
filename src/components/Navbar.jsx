@@ -4,7 +4,7 @@ import CartWidget from "./CartWidget"
 const Navbar = () => {
   return (
     <nav className="navbar">
-        <Link to="/" ><img  className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoQjHPCmh6vcitpzGqErT-vZkgr1Tbs_vkA&s" /></Link>
+        <Link to="/" ><img  className="logo" src="https://media.istockphoto.com/id/1144084265/es/vector/plantilla-de-dise%C3%B1o-abstracto-de-vector-de-fitness-dise%C3%B1o-para-gimnasio-y-vector-de-fitness.jpg?s=612x612&w=0&k=20&c=ETK9usK_AxmTwDxQ9VgjljXic6f0JvnjXF4cfmL-Gms=" /></Link>
         <ul className="menu">
             <li><Link className="menu-link" to="/">Inicio</Link></li>
             {/* <li><Link className="menu-link" to="/productos">Productos</Link></li> */}

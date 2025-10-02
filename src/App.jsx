@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import { CartProvider } from './context/CartContext';
 import './main.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
              <Route path="/checkout" element={<Checkout />}/>
              {/* <Route path='/accesorios' element={<Accesorios />} /> */}
              </Routes>
+             <Footer />  
       </BrowserRouter>
     </CartProvider> 
     </div>
