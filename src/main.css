@@ -458,3 +458,121 @@ body {
   background-color: black;
   color: white;
 }
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN CLEAN    */
+/* ============================= */
+
+/* Navbar base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1000; /* 🔥 siempre arriba */
+}
+
+.logo img {
+  width: 70px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 9999; /* 🔥 más alto que productos */
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  font-size: 26px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .producto-detalle {
+    grid-template-columns: 1fr;
+  }
+
+  .carrito-factura {
+    flex-direction: column;
+  }
+
+  .carrito-resumen {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
+
+  .logo img {
+    width: 60px; /* un poco más chico */
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .producto h4 {
+    font-size: 1.1rem;
+  }
+
+  .precio {
+    font-size: 1.4rem;
+  }
+
+  .carrito-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .carrito-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile menú hamburguesa */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px; /* queda pegado al lado derecho */
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block; /* visible en mobile */
+  }
+}

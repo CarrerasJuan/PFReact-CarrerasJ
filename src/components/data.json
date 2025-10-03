@@ -170,12 +170,27 @@
         "precio": 1500,
         "stock": 10
     },
-    {
-        "id": 20,
-        "titulo": "Proteina",
-        "descripcion": "Batido de proteina sabor chocolate x 500g.",
+    {"id": 20,
+        "titulo": "BCAA",
+        "descripcion": "Aminoacidos ramificados sabor limon x 300g.",
         "categoria": "suplementos",
-        "imagen": "https://cdn.batitienda.com/baticloud/images/product_image_from_excel_4b5423f89ed942c9a25a387ad31b0ffb_637438132345891008_0_m.jpg",
+        "imagen": "https://starnutrition.com.ar/cdn/shop/files/BCAA2000.png?v=1718218471",
+        "precio": 1500,
+        "stock": 10
+    },
+    {"id": 21,
+        "titulo": "lCarnitina 1500",
+        "descripcion": "x 60 capsulas.",
+        "categoria": "suplementos",
+        "imagen": "https://www.enasport.com/cdn/shop/files/Carnitina_4.png?v=1739377333&width=2048",
+        "precio": 1500,
+        "stock": 10
+    },
+    {"id": 22,
+        "titulo": "Animal Pak 44",
+        "descripcion": "Paquetes Universal Nutrition.",
+        "categoria": "suplementos",
+        "imagen": "https://nutrafitcolombia.com/wp-content/uploads/2024/07/animal-pak-44-paquetes.webp",
         "precio": 1500,
         "stock": 10
     }
