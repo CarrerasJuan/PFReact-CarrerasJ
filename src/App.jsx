@@ -13,19 +13,22 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <CartProvider>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>} />
-        <Route path='/item/:id' element={<ItemDetailContainer/>} />
-        <Route path='/productos/:categoria' element={<ItemListContainer/>} />
-        <Route path='/contacto' element={<Contacto/>} />
-        <Route path='/carrito' element={<Carrito/>} />
-        <Route path="/checkout" element={<Checkout />}/>
-        {/* <Route path='/accesorios' element={<Accesorios />} /> */}
-      </Routes>
-      <Footer />  
-    </CartProvider> 
-  )
+      <div className="app-wrapper">      {/* <-- nuevo */}
+        <Navbar />
+        <main className="main-content">  {/* <-- nuevo */}
+          <Routes>
+            <Route path='/' element={<ItemListContainer/>} />
+            <Route path='/item/:id' element={<ItemDetailContainer/>} />
+            <Route path='/productos/:categoria' element={<ItemListContainer/>} />
+            <Route path='/contacto' element={<Contacto/>} />
+            <Route path='/carrito' element={<Carrito/>} />
+            <Route path="/checkout" element={<Checkout />}/>
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </CartProvider>
+  );
 }
 
 export default App;

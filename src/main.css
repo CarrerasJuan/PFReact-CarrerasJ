@@ -458,46 +458,101 @@ body {
   background-color: black;
   color: white;
 }
+
 /* ============================= */
-/* 📱 RESPONSIVE DESIGN CLEAN    */
+/* 📱 NAVBAR + MENÚ RESPONSIVE   */
 /* ============================= */
 
 /* Navbar base */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo izq, menú + carrito der */
   align-items: center;
   padding: 10px 20px;
   position: relative;
-  z-index: 1000; /* 🔥 siempre arriba */
+  z-index: 1000;
+  background-color: var(--clr-main);
 }
 
 .logo img {
   width: 70px;
+  cursor: pointer;
 }
 
 .menu {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: 20px;
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  z-index: 9999; /* 🔥 más alto que productos */
+  display: flex; /* desktop */
+  gap: 20px;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(--clr-black);
+  font-weight: 600;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.menu-link:hover {
+  color: var(--clr-white);
+  transform: scale(1.05);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .hamburger {
-  display: none;
+  display: none; /* visible solo mobile */
   background: none;
   font-size: 26px;
   border: none;
   cursor: pointer;
+  color: var(--clr-white);
 }
 
-/* Tablets */
+.cart-widget {
+  position: relative;
+}
+
+/* ============================= */
+/* Mobile - Menú hamburguesa      */
+/* ============================= */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* justo debajo del navbar */
+    right: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+  }
+
+  .menu.open {
+    display: flex; /* visible al abrir hamburguesa */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .cart-widget {
+    position: absolute;
+    top: 15px;
+    right: 60px; /* separa del botón hamburguesa */
+  }
+}
+
+/* ============================= */
+/* Tablets - ajustes intermedios */
+/* ============================= */
 @media (max-width: 992px) {
   .menu {
     flex-wrap: wrap;
@@ -519,7 +574,9 @@ body {
   }
 }
 
-/* Celulares */
+/* ============================= */
+/* Celulares - ajustes pequeños  */
+/* ============================= */
 @media (max-width: 576px) {
   .main-title {
     font-size: 1.6rem;
@@ -527,7 +584,7 @@ body {
   }
 
   .logo img {
-    width: 60px; /* un poco más chico */
+    width: 60px;
   }
 
   .productos {
@@ -554,25 +611,88 @@ body {
   }
 }
 
-/* Mobile menú hamburguesa */
+/* ============================= */
+/* Footer pegado abajo si contenido corto */
+body, html {
+  height: 100%;
+}
+
+.footer {
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 1.5rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+/* Carrito resumen - Mobile */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+  .carrito-resumen {
+    width: 100%;
+    padding: 1rem;
+    position: static; /* que no quede sticky */
+  }
+
+  .boton-vaciar,
+  .boton-comprar {
+    width: 100%;           /* botones llenan el contenedor */
+    padding: 0.6rem 0;     /* menos alto que desktop */
+    text-align: center;    /* texto centrado */
+    font-size: 1rem;       /* tamaño adecuado para mobile */
+  }
+}
+/* ============================= */
+/* Ajuste botones carrito - Tablets */
+/* ============================= */
+@media (max-width: 992px) and (min-width: 769px) {
+  .boton-vaciar,
+  .boton-comprar {
+    width: 80%;         /* menos ancho que mobile */
+    padding: 0.6rem;    /* altura más proporcionada */
+    font-size: 0.95rem; /* tamaño de letra más cómodo */
+    text-align: center; /* centra el texto dentro del botón */
+    margin: 0 auto;     /* centra el botón dentro del contenedor */
+  }
+
+  .carrito-botones {
     flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px; /* queda pegado al lado derecho */
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    gap: 0.7rem;
+    align-items: center;
   }
+}
+html, body, #root {
+  height: 100%;
+}
 
-  .menu.open {
-    display: flex;
-  }
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa toda la pantalla */
+}
 
-  .hamburger {
-    display: block; /* visible en mobile */
-  }
+/* El main crece y empuja el footer hacia abajo */
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* Footer: elimina reglas problemáticas */
+.footer {
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 1.5rem 0;
+  width: 100%;
+  margin-top: 0;     /* ahora el espacio lo da main-content */
+  position: static;  /* asegurar que no esté fixed/absolute */
+  bottom: auto;
+}
+.carrito-vacio p {
+  color: #000000; 
+    text-shadow: 1px 1px 3px rgb(255, 255, 255); 
+  font-size: 1.2rem;      /* tamaño */
+  font-weight: bold;      /* negrita */
+  font-family: 'Arial', sans-serif; /* tipografía */
+  margin-top: 10px;       /* separación */
 }

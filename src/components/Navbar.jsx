@@ -1,21 +1,21 @@
-import { Link } from "react-router-dom"
-import CartWidget from "./CartWidget"
-import { useState, useEffect, useRef } from "react"
+import { Link } from "react-router-dom";
+import CartWidget from "./CartWidget";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
-  const menuRef = useRef(null)
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef(null);
 
   // Cerrar menú si hago click fuera
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
-        setOpen(false)
+        setOpen(false);
       }
-    }
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [])
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <nav className="navbar">
@@ -27,21 +27,51 @@ const Navbar = () => {
         />
       </Link>
 
-      {/* Botón hamburguesa */}
-      <button className="hamburger" onClick={() => setOpen(!open)}>
-        ☰
-      </button>
-
-      {/* Menú */}
+      {/* Menú desktop y mobile */}
       <ul ref={menuRef} className={`menu ${open ? "open" : ""}`}>
-        <li><Link className="menu-link" to="/" onClick={() => setOpen(false)}>Inicio</Link></li>
-        <li><Link className="menu-link" to="/productos/accesorios" onClick={() => setOpen(false)}>Accesorios</Link></li>
-        <li><Link className="menu-link" to="/productos/suplementos" onClick={() => setOpen(false)}>Suplementos</Link></li>
-        <li><Link className="menu-link" to="/productos/indumentaria" onClick={() => setOpen(false)}>Indumentaria</Link></li>
-        <CartWidget />
+        <li>
+          <Link className="menu-link" to="/" onClick={() => setOpen(false)}>
+            Inicio
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="menu-link"
+            to="/productos/accesorios"
+            onClick={() => setOpen(false)}
+          >
+            Accesorios
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="menu-link"
+            to="/productos/suplementos"
+            onClick={() => setOpen(false)}
+          >
+            Suplementos
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="menu-link"
+            to="/productos/indumentaria"
+            onClick={() => setOpen(false)}
+          >
+            Indumentaria
+          </Link>
+        </li>
       </ul>
-    </nav>
-  )
-}
 
-export default Navbar
+      {/* Carrito y hamburguesa siempre a la derecha */}
+      <div className="navbar-right">
+        <CartWidget />
+        <button className="hamburger" onClick={() => setOpen(!open)}>
+          ☰
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
